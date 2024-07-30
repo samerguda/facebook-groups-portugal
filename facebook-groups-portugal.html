@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Groups for Portugal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>جروبات الفيس بوك للبرتغال</h1>
+
+        <div class="button-container">
+            <button onclick="window.print()">Print</button>
+            <button onclick="copyContent()">Copy Content</button>
+        </div>
+
+        <ul>
+            <li><a href="https://www.facebook.com/share/fF7e6Jhu6JYmVKKh/?mibextid=K35XfP" target="_blank">Facebook Group 1</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100089649349401&mibextid=LQQJ4d" target="_blank">Facebook Group 2</a></li>
+            <li><a href="https://www.facebook.com/share/DkkcygLmvs2FNNLQ/?mibextid=K35XfP" target="_blank">Facebook Group 3</a></li>
+            <li><a href="https://www.facebook.com/share/yQzuLCpcCoHbHAGt/?mibextid=K35XfP" target="_blank">Facebook Group 4</a></li>
+            <li><a href="https://www.facebook.com/share/8Zo5u1wY4iEn4UaY/?mibextid=K35XfP" target="_blank">Facebook Group 5</a></li>
+            <li><a href="https://www.facebook.com/share/ooKU2nGVhtPhqg2v/?mibextid=K35XfP" target="_blank">Facebook Group 6</a></li>
+            <li><a href="https://www.facebook.com/share/Ujy5WdTEJMj9QY1y/?mibextid=K35XfP" target="_blank">Facebook Group 7</a></li>
+            <li><a href="https://www.facebook.com/share/FTpa5Ru9Aau8DrPv/?mibextid=K35XfP" target="_blank">Facebook Group 8</a></li>
+            <li><a href="https://www.facebook.com/share/oRGKTyyP53gsE2oA/?mibextid=K35XfP" target="_blank">Facebook Group 9</a></li>
+            <li><a href="https://www.facebook.com/share/VperCf6WUhW5FNKX/?mibextid=K35XfP" target="_blank">Facebook Group 10</a></li>
+            <li><a href="https://www.facebook.com/share/vk4GBc18aCpGBEgu/?mibextid=K35XfP" target="_blank">Facebook Group 11</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function copyContent() {
+            const el = document.createElement('textarea');
+            el.value = document.querySelector('.container').innerText;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Content copied to clipboard');
+        }
+    </script>
+</body>
+</html>
